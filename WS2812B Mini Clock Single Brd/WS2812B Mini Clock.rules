@@ -1,0 +1,90 @@
+
+(rules PCB WS2812B Mini Clock
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1665)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 200.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "@:no_net_0"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND DIN +5V "Net-(U1-Pad2)" "Net-(U2-Pad2)" "Net-(U3-Pad2)" "Net-(U4-Pad2)" "Net-(U5-Pad2)"
+    "Net-(U6-Pad2)" "Net-(U7-Pad2)" "Net-(U11-Pad2)" "Net-(U10-Pad4)" "Net-(U10-Pad2)" "Net-(U12-Pad2)" "Net-(U13-Pad2)" "Net-(U14-Pad2)"
+    "Net-(U15-Pad2)" "Net-(U16-Pad2)" "Net-(U17-Pad2)" "Net-(U18-Pad2)" "Net-(U19-Pad2)" SDA RST SCL
+    BTN1 BTN2 DOUT "Net-(U24-Pad2)" "Net-(U8-Pad2)" "Net-(U20-Pad2)" "Net-(U22-Pad2)" "Net-(U21-Pad2)"
+    "Net-(U23-Pad2)" "Net-(U27-Pad2)" "Net-(U28-Pad2)" "Net-(U29-Pad2)" "Net-(U30-Pad2)" "Net-(U31-Pad2)" "Net-(U32-Pad2)" "Net-(U33-Pad2)"
+    "Net-(U34-Pad2)" "Net-(U35-Pad2)" "Net-(U36-Pad2)" "Net-(U37-Pad2)" "Net-(U38-Pad2)" "Net-(U39-Pad2)" "Net-(U40-Pad2)" "Net-(U41-Pad2)"
+    "Net-(U42-Pad2)" "Net-(U43-Pad2)" "Net-(U44-Pad2)" "Net-(U45-Pad2)" "Net-(U46-Pad2)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+    INT "Net-(R4-Pad1)" "Net-(R5-Pad1)" "Net-(R6-Pad1)" "Net-(R7-Pad1)" LED0 LED1 LED2
+    BTN0 BTN3 BTN4 BTN5 "Net-(U48-Pad2)" "Net-(U49-Pad4)" "Net-(U49-Pad2)" "Net-(U50-Pad2)"
+    "Net-(U50-Pad4)" "Net-(U51-Pad4)" "Net-(U51-Pad2)" "Net-(U52-Pad2)" "Net-(U52-Pad4)" "Net-(U53-Pad2)" "Net-(U54-Pad2)" "Net-(U55-Pad2)"
+    "Net-(U56-Pad2)" "Net-(U57-Pad2)" "Net-(U62-Pad2)" "Net-(U63-Pad2)" "Net-(U64-Pad4)" "Net-(U64-Pad2)" "Net-(U65-Pad2)" "Net-(U65-Pad4)"
+    "Net-(U66-Pad4)" "Net-(U66-Pad2)" "Net-(U67-Pad2)" "Net-(U67-Pad4)" "Net-(U68-Pad2)" "Net-(U69-Pad2)" "Net-(U70-Pad2)" "Net-(U71-Pad2)"
+    "Net-(U72-Pad2)" "Net-(U77-Pad2)" "Net-(U78-Pad2)" "Net-(U79-Pad4)" "Net-(U79-Pad2)" "Net-(U80-Pad2)" "Net-(U80-Pad4)" "Net-(U81-Pad4)"
+    "Net-(U81-Pad2)" "Net-(U82-Pad2)" "Net-(U83-Pad2)" "Net-(U84-Pad2)" "Net-(U85-Pad2)" "Net-(J4-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

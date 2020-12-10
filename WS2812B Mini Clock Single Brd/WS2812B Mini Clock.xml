@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Reed\Documents\WS2812B Mini Clock Single Brd\WS2812B Mini Clock.sch</source>
+    <date>11/20/2020 22:12:04</date>
+    <tool>Eeschema (5.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>WS2812B MINI CLOCK</title>
+        <company>ESQUIREE</company>
+        <rev>1.0</rev>
+        <date>2020-11-19</date>
+        <source>WS2812B Mini Clock.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/LEDs/" tstamps="/5FC4DAE0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LEDs.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="MCU1">
+      <value>ATtiny85-20SU</value>
+      <footprint>TEST:ATtiny85_SMD</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATtiny" part="ATtiny85-20PU" description="20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C616C93</tstamp>
+    </comp>
+    <comp ref="SW0">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C90EFF7</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9C2008</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9C238D</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9C2407</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9C248B</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9C250D</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB42801</tstamp>
+    </comp>
+    <comp ref="USB1">
+      <value>USB_B_Micro</value>
+      <footprint>DigiKey Library:USB_Micro_B_Female_10103594-0001LF</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">0473460001</field>
+      </fields>
+      <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E4FD447</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>AVR-JTAG-10</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="AVR-JTAG-10" description="Atmel 10-pin JTAG connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4A938C</tstamp>
+    </comp>
+    <comp ref="U25">
+      <value>DS3231M</value>
+      <footprint>Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</datasheet>
+      <libsource lib="Timer_RTC" part="DS3231M" description="Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4C0FFD</tstamp>
+    </comp>
+    <comp ref="U24">
+      <value>Bat</value>
+      <footprint>TEST:CR2032 Housing</footprint>
+      <libsource lib="ALS31313" part="Bat" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4FC8A5</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBCF8E3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBCF9EE</tstamp>
+    </comp>
+    <comp ref="U26">
+      <value>MCP23017T-E_SO</value>
+      <footprint>TEST:SOIC127P1030X265-28N</footprint>
+      <fields>
+        <field name="MANUFACTURER">Microchip</field>
+        <field name="STANDARD">IPC7351B</field>
+      </fields>
+      <libsource lib="MCP23017T-E_SO" part="MCP23017T-E_SO" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE83583</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE85057</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE85133</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE8516D</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE858D5</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEA3481</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEA5238</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEA5247</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEAB15C</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3S-1000</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEAD96D</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEB8709</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEE12A2</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEE74C6</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEE74D3</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEE9523</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEE9530</tstamp>
+    </comp>
+    <comp ref="U90">
+      <value>AZ1117-5.0</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AZ1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AZ1117-5.0" description="1A 20V Fixed LDO Linear Regulator, 5.0V, SOT-89/SOT-223/TO-220/TO-252/TO-263"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB88D98</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Barrel_Jack</value>
+      <footprint>Connectors:BARREL_JACK</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB88F23</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x01</value>
+      <footprint>TEST:1mm Mount</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB8DBE5</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x01</value>
+      <footprint>TEST:1mm Mount</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB8DC5B</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC612E1</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC612F6</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC61311</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC97BE9</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC97BFE</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC97C19</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC99FF6</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC9A00B</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC9A026</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC9B328</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC9B33D</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FC9B358</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA0494</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA04A9</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA04C4</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA6680</tstamp>
+    </comp>
+    <comp ref="U17">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA6695</tstamp>
+    </comp>
+    <comp ref="U18">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCA66B0</tstamp>
+    </comp>
+    <comp ref="U19">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCABC16</tstamp>
+    </comp>
+    <comp ref="U20">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCABC2B</tstamp>
+    </comp>
+    <comp ref="U21">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCABC46</tstamp>
+    </comp>
+    <comp ref="U22">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCB367F</tstamp>
+    </comp>
+    <comp ref="U23">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCB3694</tstamp>
+    </comp>
+    <comp ref="U27">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCB36AF</tstamp>
+    </comp>
+    <comp ref="U28">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCBD4C5</tstamp>
+    </comp>
+    <comp ref="U29">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCBD4DA</tstamp>
+    </comp>
+    <comp ref="U30">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCBD4F5</tstamp>
+    </comp>
+    <comp ref="U31">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCC9790</tstamp>
+    </comp>
+    <comp ref="U32">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCC97A5</tstamp>
+    </comp>
+    <comp ref="U33">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCC97C0</tstamp>
+    </comp>
+    <comp ref="U34">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCD7EC9</tstamp>
+    </comp>
+    <comp ref="U35">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCD7EDE</tstamp>
+    </comp>
+    <comp ref="U36">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCD7EF9</tstamp>
+    </comp>
+    <comp ref="U37">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCFD775</tstamp>
+    </comp>
+    <comp ref="U38">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCFD78A</tstamp>
+    </comp>
+    <comp ref="U39">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FCFD7A5</tstamp>
+    </comp>
+    <comp ref="U40">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD14691</tstamp>
+    </comp>
+    <comp ref="U41">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD146A6</tstamp>
+    </comp>
+    <comp ref="U42">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD146C1</tstamp>
+    </comp>
+    <comp ref="U43">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD2F473</tstamp>
+    </comp>
+    <comp ref="U44">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD2F488</tstamp>
+    </comp>
+    <comp ref="U45">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD2F4A3</tstamp>
+    </comp>
+    <comp ref="U46">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD4DD88</tstamp>
+    </comp>
+    <comp ref="U47">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FD4DD9D</tstamp>
+    </comp>
+    <comp ref="U48">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92734</tstamp>
+    </comp>
+    <comp ref="U53">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92749</tstamp>
+    </comp>
+    <comp ref="U58">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92764</tstamp>
+    </comp>
+    <comp ref="U49">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92785</tstamp>
+    </comp>
+    <comp ref="U54">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB9279A</tstamp>
+    </comp>
+    <comp ref="U59">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB927B5</tstamp>
+    </comp>
+    <comp ref="U50">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB927D5</tstamp>
+    </comp>
+    <comp ref="U55">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB927EA</tstamp>
+    </comp>
+    <comp ref="U60">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92805</tstamp>
+    </comp>
+    <comp ref="U51">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92825</tstamp>
+    </comp>
+    <comp ref="U56">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB9283A</tstamp>
+    </comp>
+    <comp ref="U61">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92855</tstamp>
+    </comp>
+    <comp ref="U52">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92875</tstamp>
+    </comp>
+    <comp ref="U57">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB9288A</tstamp>
+    </comp>
+    <comp ref="U62">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB928A5</tstamp>
+    </comp>
+    <comp ref="U63">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB928C2</tstamp>
+    </comp>
+    <comp ref="U68">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB928D7</tstamp>
+    </comp>
+    <comp ref="U73">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB928F2</tstamp>
+    </comp>
+    <comp ref="U64">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92912</tstamp>
+    </comp>
+    <comp ref="U69">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92927</tstamp>
+    </comp>
+    <comp ref="U74">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92942</tstamp>
+    </comp>
+    <comp ref="U65">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92962</tstamp>
+    </comp>
+    <comp ref="U70">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92977</tstamp>
+    </comp>
+    <comp ref="U75">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92992</tstamp>
+    </comp>
+    <comp ref="U66">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB929B2</tstamp>
+    </comp>
+    <comp ref="U71">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB929C7</tstamp>
+    </comp>
+    <comp ref="U76">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB929E2</tstamp>
+    </comp>
+    <comp ref="U67">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A02</tstamp>
+    </comp>
+    <comp ref="U72">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A17</tstamp>
+    </comp>
+    <comp ref="U77">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A32</tstamp>
+    </comp>
+    <comp ref="U78">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A4F</tstamp>
+    </comp>
+    <comp ref="U82">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A64</tstamp>
+    </comp>
+    <comp ref="U86">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92A7F</tstamp>
+    </comp>
+    <comp ref="U79">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92AA5</tstamp>
+    </comp>
+    <comp ref="U83">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92ABA</tstamp>
+    </comp>
+    <comp ref="U87">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92AD5</tstamp>
+    </comp>
+    <comp ref="U80">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92AF5</tstamp>
+    </comp>
+    <comp ref="U84">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92B0A</tstamp>
+    </comp>
+    <comp ref="U88">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92B25</tstamp>
+    </comp>
+    <comp ref="U81">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92B45</tstamp>
+    </comp>
+    <comp ref="U85">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92B5A</tstamp>
+    </comp>
+    <comp ref="U89">
+      <value>WS2812B</value>
+      <footprint>TEST:WS2812B-MINI</footprint>
+      <libsource lib="ALS31313" part="WS2812B" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/5FC4DAE0/"/>
+      <tstamp>5FB92B75</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ALS31313" part="Bat">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Bat</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="input"/>
+        <pin num="2" name="+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ALS31313" part="WS2812B">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WS2812B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="input"/>
+        <pin num="2" name="DOUT" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="AVR-JTAG-10">
+      <description>Atmel 10-pin JTAG connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>IDC?Header*2x05*</fp>
+        <fp>Pin?Header*2x05*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AVR-JTAG-10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TCK" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="TDO" type="passive"/>
+        <pin num="4" name="VREF" type="passive"/>
+        <pin num="5" name="TMS" type="passive"/>
+        <pin num="6" name="~SRST" type="passive"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="~TRST" type="passive"/>
+        <pin num="9" name="TDI" type="passive"/>
+        <pin num="10" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_B_Micro">
+      <aliases>
+        <alias>USB_B_Mini</alias>
+      </aliases>
+      <description>USB Micro Type B connector</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Micro</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>LED generic</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCP23017T-E_SO" part="MCP23017T-E_SO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP23017T-E_SO</field>
+        <field name="Footprint">SOIC127P1030X265-28N</field>
+        <field name="MANUFACTURER">Microchip</field>
+        <field name="STANDARD">IPC7351B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPB0" type="BiDi"/>
+        <pin num="2" name="GPB1" type="BiDi"/>
+        <pin num="3" name="GPB2" type="BiDi"/>
+        <pin num="4" name="GPB3" type="BiDi"/>
+        <pin num="5" name="GPB4" type="BiDi"/>
+        <pin num="6" name="GPB5" type="BiDi"/>
+        <pin num="7" name="GPB6" type="BiDi"/>
+        <pin num="8" name="GPB7" type="BiDi"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VSS" type="power_in"/>
+        <pin num="12" name="SCK" type="input"/>
+        <pin num="13" name="SDA" type="BiDi"/>
+        <pin num="15" name="A0" type="input"/>
+        <pin num="16" name="A1" type="input"/>
+        <pin num="17" name="A2" type="input"/>
+        <pin num="18" name="~RESET" type="input"/>
+        <pin num="19" name="INTB" type="output"/>
+        <pin num="20" name="INTA" type="output"/>
+        <pin num="21" name="GPA0" type="BiDi"/>
+        <pin num="22" name="GPA1" type="BiDi"/>
+        <pin num="23" name="GPA2" type="BiDi"/>
+        <pin num="24" name="GPA3" type="BiDi"/>
+        <pin num="25" name="GPA4" type="BiDi"/>
+        <pin num="26" name="GPA5" type="BiDi"/>
+        <pin num="27" name="GPA6" type="BiDi"/>
+        <pin num="28" name="GPA7" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATtiny" part="ATtiny25V-10PU">
+      <aliases>
+        <alias>ATtiny25-20PU</alias>
+        <alias>ATtiny45V-10PU</alias>
+        <alias>ATtiny45-20PU</alias>
+        <alias>ATtiny85V-10PU</alias>
+        <alias>ATtiny85-20PU</alias>
+      </aliases>
+      <description>10MHz, 2kB Flash, 128B SRAM, 128B EEPROM, debugWIRE, DIP-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATtiny25V-10PU</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~RESET~/PB5" type="BiDi"/>
+        <pin num="2" name="XTAL1/PB3" type="BiDi"/>
+        <pin num="3" name="XTAL2/PB4" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="AREF/PB0" type="BiDi"/>
+        <pin num="6" name="PB1" type="BiDi"/>
+        <pin num="7" name="PB2" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AZ1117-1.2">
+      <aliases>
+        <alias>AZ1117-1.5</alias>
+        <alias>AZ1117-1.8</alias>
+        <alias>AZ1117-2.5</alias>
+        <alias>AZ1117-2.85</alias>
+        <alias>AZ1117-3.3</alias>
+        <alias>AZ1117-5.0</alias>
+      </aliases>
+      <description>1A 20V Fixed LDO Linear Regulator, 1.2V, SOT-89/SOT-223/TO-220/TO-252/TO-263</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AZ1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>SOT?89*</fp>
+        <fp>TO?220*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AZ1117-1.2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Timer_RTC" part="DS3231M">
+      <description>Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16</description>
+      <docs>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</docs>
+      <footprints>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS3231M</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="32KHZ" type="openCol"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="~INT~/SQW" type="openCol"/>
+        <pin num="4" name="~RST" type="BiDi"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="GND" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="GND" type="passive"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="VBAT" type="power_in"/>
+        <pin num="15" name="SDA" type="BiDi"/>
+        <pin num="16" name="SCL" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ALS31313">
+      <uri>C:/Users/Reed/Documents/Doc H LCD/AVR_LCD WITH EXTRAS/ALS31313.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="MCP23017T-E_SO">
+      <uri>C:/Users/Reed/Documents/KICAD LIB/MCP23017T-E_SO.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_ATtiny">
+      <uri>C:\Program Files\KiCad\share\kicad\library/MCU_Microchip_ATtiny.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Timer_RTC">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Timer_RTC.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="U69" pin="1"/>
+      <node ref="U21" pin="1"/>
+      <node ref="U13" pin="1"/>
+      <node ref="U22" pin="1"/>
+      <node ref="U52" pin="1"/>
+      <node ref="U18" pin="1"/>
+      <node ref="U20" pin="1"/>
+      <node ref="U68" pin="1"/>
+      <node ref="U16" pin="1"/>
+      <node ref="U17" pin="1"/>
+      <node ref="U15" pin="1"/>
+      <node ref="U74" pin="1"/>
+      <node ref="U12" pin="1"/>
+      <node ref="U14" pin="1"/>
+      <node ref="U64" pin="1"/>
+      <node ref="U10" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="7"/>
+      <node ref="U11" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U63" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U19" pin="1"/>
+      <node ref="U61" pin="1"/>
+      <node ref="U57" pin="1"/>
+      <node ref="U62" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="U88" pin="1"/>
+      <node ref="U51" pin="1"/>
+      <node ref="U59" pin="1"/>
+      <node ref="U81" pin="1"/>
+      <node ref="U66" pin="1"/>
+      <node ref="U71" pin="1"/>
+      <node ref="U60" pin="1"/>
+      <node ref="U76" pin="1"/>
+      <node ref="U86" pin="1"/>
+      <node ref="U87" pin="1"/>
+      <node ref="U83" pin="1"/>
+      <node ref="U80" pin="1"/>
+      <node ref="U84" pin="1"/>
+      <node ref="U50" pin="1"/>
+      <node ref="U79" pin="1"/>
+      <node ref="U56" pin="1"/>
+      <node ref="U55" pin="1"/>
+      <node ref="U89" pin="1"/>
+      <node ref="U85" pin="1"/>
+      <node ref="U67" pin="1"/>
+      <node ref="U58" pin="1"/>
+      <node ref="U82" pin="1"/>
+      <node ref="U77" pin="1"/>
+      <node ref="U54" pin="1"/>
+      <node ref="U73" pin="1"/>
+      <node ref="U72" pin="1"/>
+      <node ref="U65" pin="1"/>
+      <node ref="U53" pin="1"/>
+      <node ref="U70" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U75" pin="1"/>
+      <node ref="U78" pin="1"/>
+      <node ref="U48" pin="1"/>
+      <node ref="U49" pin="1"/>
+      <node ref="U46" pin="1"/>
+      <node ref="U43" pin="1"/>
+      <node ref="U44" pin="1"/>
+      <node ref="U29" pin="1"/>
+      <node ref="USB1" pin="1"/>
+      <node ref="U39" pin="1"/>
+      <node ref="U45" pin="1"/>
+      <node ref="U47" pin="1"/>
+      <node ref="U31" pin="1"/>
+      <node ref="U26" pin="9"/>
+      <node ref="U36" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U32" pin="1"/>
+      <node ref="U33" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U30" pin="1"/>
+      <node ref="U27" pin="1"/>
+      <node ref="U90" pin="2"/>
+      <node ref="U23" pin="1"/>
+      <node ref="U28" pin="1"/>
+      <node ref="U35" pin="1"/>
+      <node ref="U34" pin="1"/>
+      <node ref="U38" pin="1"/>
+      <node ref="MCU1" pin="8"/>
+      <node ref="U25" pin="2"/>
+      <node ref="U9" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U40" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U42" pin="1"/>
+      <node ref="U41" pin="1"/>
+      <node ref="U8" pin="1"/>
+      <node ref="U7" pin="1"/>
+      <node ref="U37" pin="1"/>
+    </net>
+    <net code="2" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U26" pin="15"/>
+    </net>
+    <net code="3" name="Net-(R5-Pad1)">
+      <node ref="U26" pin="16"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="4" name="Net-(R6-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="U26" pin="17"/>
+    </net>
+    <net code="5" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="U26" pin="18"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="U71" pin="3"/>
+      <node ref="U35" pin="3"/>
+      <node ref="U76" pin="3"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U7" pin="3"/>
+      <node ref="U27" pin="3"/>
+      <node ref="U23" pin="3"/>
+      <node ref="U75" pin="3"/>
+      <node ref="U28" pin="3"/>
+      <node ref="U65" pin="3"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U40" pin="3"/>
+      <node ref="U33" pin="3"/>
+      <node ref="U80" pin="3"/>
+      <node ref="U70" pin="3"/>
+      <node ref="U85" pin="3"/>
+      <node ref="U32" pin="3"/>
+      <node ref="U89" pin="3"/>
+      <node ref="U9" pin="3"/>
+      <node ref="U31" pin="3"/>
+      <node ref="U83" pin="3"/>
+      <node ref="U79" pin="3"/>
+      <node ref="U34" pin="3"/>
+      <node ref="U8" pin="3"/>
+      <node ref="U11" pin="3"/>
+      <node ref="U36" pin="3"/>
+      <node ref="U81" pin="3"/>
+      <node ref="U10" pin="3"/>
+      <node ref="U86" pin="3"/>
+      <node ref="U88" pin="3"/>
+      <node ref="U4" pin="3"/>
+      <node ref="U47" pin="3"/>
+      <node ref="U14" pin="3"/>
+      <node ref="U13" pin="3"/>
+      <node ref="U66" pin="3"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U16" pin="3"/>
+      <node ref="U43" pin="3"/>
+      <node ref="U46" pin="3"/>
+      <node ref="U12" pin="3"/>
+      <node ref="U22" pin="3"/>
+      <node ref="U18" pin="3"/>
+      <node ref="U39" pin="3"/>
+      <node ref="U20" pin="3"/>
+      <node ref="U21" pin="3"/>
+      <node ref="U45" pin="3"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U19" pin="3"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U82" pin="3"/>
+      <node ref="U67" pin="3"/>
+      <node ref="U78" pin="3"/>
+      <node ref="U77" pin="3"/>
+      <node ref="U42" pin="3"/>
+      <node ref="U30" pin="3"/>
+      <node ref="U37" pin="3"/>
+      <node ref="U15" pin="3"/>
+      <node ref="U38" pin="3"/>
+      <node ref="U44" pin="3"/>
+      <node ref="U17" pin="3"/>
+      <node ref="U41" pin="3"/>
+      <node ref="U29" pin="3"/>
+      <node ref="U72" pin="3"/>
+      <node ref="U74" pin="3"/>
+      <node ref="U26" pin="10"/>
+      <node ref="U64" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U60" pin="3"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U53" pin="3"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U69" pin="3"/>
+      <node ref="U51" pin="3"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U49" pin="3"/>
+      <node ref="U48" pin="3"/>
+      <node ref="J3" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="SW4" pin="2"/>
+      <node ref="U54" pin="3"/>
+      <node ref="U58" pin="3"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U68" pin="3"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="J4" pin="2"/>
+      <node ref="U73" pin="3"/>
+      <node ref="U90" pin="1"/>
+      <node ref="SW5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U62" pin="3"/>
+      <node ref="U24" pin="1"/>
+      <node ref="J1" pin="10"/>
+      <node ref="U87" pin="3"/>
+      <node ref="U25" pin="13"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U55" pin="3"/>
+      <node ref="U61" pin="3"/>
+      <node ref="U25" pin="12"/>
+      <node ref="U25" pin="11"/>
+      <node ref="U25" pin="10"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U57" pin="3"/>
+      <node ref="U25" pin="5"/>
+      <node ref="U25" pin="6"/>
+      <node ref="U25" pin="7"/>
+      <node ref="U25" pin="8"/>
+      <node ref="U63" pin="3"/>
+      <node ref="U25" pin="9"/>
+      <node ref="SW0" pin="2"/>
+      <node ref="U50" pin="3"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U56" pin="3"/>
+      <node ref="U52" pin="3"/>
+      <node ref="U84" pin="3"/>
+      <node ref="U59" pin="3"/>
+      <node ref="USB1" pin="6"/>
+      <node ref="USB1" pin="5"/>
+      <node ref="C5" pin="2"/>
+      <node ref="MCU1" pin="4"/>
+    </net>
+    <net code="7" name="BTN2">
+      <node ref="SW2" pin="1"/>
+      <node ref="U26" pin="23"/>
+    </net>
+    <net code="8" name="BTN1">
+      <node ref="SW1" pin="1"/>
+      <node ref="U26" pin="22"/>
+    </net>
+    <net code="9" name="Net-(U26-Pad6)">
+      <node ref="U26" pin="6"/>
+    </net>
+    <net code="10" name="SDA">
+      <node ref="U25" pin="15"/>
+      <node ref="J1" pin="9"/>
+      <node ref="R2" pin="2"/>
+      <node ref="MCU1" pin="5"/>
+      <node ref="U26" pin="13"/>
+    </net>
+    <net code="11" name="SCL">
+      <node ref="U25" pin="16"/>
+      <node ref="MCU1" pin="7"/>
+      <node ref="U26" pin="12"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(U26-Pad8)">
+      <node ref="U26" pin="8"/>
+    </net>
+    <net code="13" name="Net-(U26-Pad7)">
+      <node ref="U26" pin="7"/>
+    </net>
+    <net code="14" name="Net-(U26-Pad5)">
+      <node ref="U26" pin="5"/>
+    </net>
+    <net code="15" name="Net-(U26-Pad4)">
+      <node ref="U26" pin="4"/>
+    </net>
+    <net code="16" name="LED2">
+      <node ref="U26" pin="3"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="17" name="LED1">
+      <node ref="U26" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="18" name="LED0">
+      <node ref="R8" pin="2"/>
+      <node ref="U26" pin="1"/>
+    </net>
+    <net code="19" name="Net-(U26-Pad28)">
+      <node ref="U26" pin="28"/>
+    </net>
+    <net code="20" name="Net-(U26-Pad27)">
+      <node ref="U26" pin="27"/>
+    </net>
+    <net code="21" name="BTN0">
+      <node ref="U26" pin="21"/>
+      <node ref="SW0" pin="1"/>
+    </net>
+    <net code="22" name="INT">
+      <node ref="MCU1" pin="2"/>
+      <node ref="U26" pin="20"/>
+    </net>
+    <net code="23" name="Net-(U26-Pad19)">
+      <node ref="U26" pin="19"/>
+    </net>
+    <net code="24" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+      <node ref="U90" pin="3"/>
+    </net>
+    <net code="25" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="26" name="BTN5">
+      <node ref="SW5" pin="1"/>
+      <node ref="U26" pin="26"/>
+    </net>
+    <net code="27" name="BTN4">
+      <node ref="U26" pin="25"/>
+      <node ref="SW4" pin="1"/>
+    </net>
+    <net code="28" name="BTN3">
+      <node ref="SW3" pin="1"/>
+      <node ref="U26" pin="24"/>
+    </net>
+    <net code="29" name="Net-(D2-Pad2)">
+      <node ref="R9" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="30" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="31" name="Net-(USB1-Pad4)">
+      <node ref="USB1" pin="4"/>
+    </net>
+    <net code="32" name="Net-(USB1-Pad3)">
+      <node ref="USB1" pin="3"/>
+    </net>
+    <net code="33" name="Net-(USB1-Pad2)">
+      <node ref="USB1" pin="2"/>
+    </net>
+    <net code="34" name="DIN">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="4"/>
+      <node ref="MCU1" pin="6"/>
+    </net>
+    <net code="35" name="Net-(MCU1-Pad3)">
+      <node ref="MCU1" pin="3"/>
+    </net>
+    <net code="36" name="Net-(U25-Pad4)">
+      <node ref="U25" pin="4"/>
+    </net>
+    <net code="37" name="Net-(U25-Pad3)">
+      <node ref="U25" pin="3"/>
+    </net>
+    <net code="38" name="Net-(U24-Pad2)">
+      <node ref="U24" pin="2"/>
+      <node ref="U25" pin="14"/>
+    </net>
+    <net code="39" name="RST">
+      <node ref="J1" pin="6"/>
+      <node ref="R1" pin="2"/>
+      <node ref="MCU1" pin="1"/>
+    </net>
+    <net code="40" name="Net-(U25-Pad1)">
+      <node ref="U25" pin="1"/>
+    </net>
+    <net code="41" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="42" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="43" name="Net-(U52-Pad2)">
+      <node ref="U57" pin="4"/>
+      <node ref="U52" pin="2"/>
+    </net>
+    <net code="44" name="Net-(U62-Pad2)">
+      <node ref="U63" pin="4"/>
+      <node ref="U62" pin="2"/>
+    </net>
+    <net code="45" name="Net-(U57-Pad2)">
+      <node ref="U57" pin="2"/>
+      <node ref="U62" pin="4"/>
+    </net>
+    <net code="46" name="Net-(U56-Pad2)">
+      <node ref="U56" pin="2"/>
+      <node ref="U61" pin="4"/>
+    </net>
+    <net code="47" name="Net-(U51-Pad2)">
+      <node ref="U56" pin="4"/>
+      <node ref="U51" pin="2"/>
+    </net>
+    <net code="48" name="Net-(U52-Pad4)">
+      <node ref="U61" pin="2"/>
+      <node ref="U52" pin="4"/>
+    </net>
+    <net code="49" name="Net-(U64-Pad2)">
+      <node ref="U64" pin="2"/>
+      <node ref="U69" pin="4"/>
+    </net>
+    <net code="50" name="Net-(U69-Pad2)">
+      <node ref="U74" pin="4"/>
+      <node ref="U69" pin="2"/>
+    </net>
+    <net code="51" name="Net-(U63-Pad2)">
+      <node ref="U63" pin="2"/>
+      <node ref="U68" pin="4"/>
+    </net>
+    <net code="52" name="Net-(U64-Pad4)">
+      <node ref="U73" pin="2"/>
+      <node ref="U64" pin="4"/>
+    </net>
+    <net code="53" name="Net-(U68-Pad2)">
+      <node ref="U73" pin="4"/>
+      <node ref="U68" pin="2"/>
+    </net>
+    <net code="54" name="Net-(U49-Pad4)">
+      <node ref="U58" pin="2"/>
+      <node ref="U49" pin="4"/>
+    </net>
+    <net code="55" name="DOUT">
+      <node ref="U48" pin="4"/>
+      <node ref="U47" pin="2"/>
+    </net>
+    <net code="56" name="Net-(U53-Pad2)">
+      <node ref="U58" pin="4"/>
+      <node ref="U53" pin="2"/>
+    </net>
+    <net code="57" name="Net-(U49-Pad2)">
+      <node ref="U54" pin="4"/>
+      <node ref="U49" pin="2"/>
+    </net>
+    <net code="58" name="Net-(U15-Pad2)">
+      <node ref="U16" pin="4"/>
+      <node ref="U15" pin="2"/>
+    </net>
+    <net code="59" name="Net-(U46-Pad2)">
+      <node ref="U47" pin="4"/>
+      <node ref="U46" pin="2"/>
+    </net>
+    <net code="60" name="Net-(U48-Pad2)">
+      <node ref="U53" pin="4"/>
+      <node ref="U48" pin="2"/>
+    </net>
+    <net code="61" name="Net-(U55-Pad2)">
+      <node ref="U55" pin="2"/>
+      <node ref="U60" pin="4"/>
+    </net>
+    <net code="62" name="Net-(U50-Pad2)">
+      <node ref="U55" pin="4"/>
+      <node ref="U50" pin="2"/>
+    </net>
+    <net code="63" name="Net-(U51-Pad4)">
+      <node ref="U51" pin="4"/>
+      <node ref="U60" pin="2"/>
+    </net>
+    <net code="64" name="Net-(U50-Pad4)">
+      <node ref="U50" pin="4"/>
+      <node ref="U59" pin="2"/>
+    </net>
+    <net code="65" name="Net-(U54-Pad2)">
+      <node ref="U54" pin="2"/>
+      <node ref="U59" pin="4"/>
+    </net>
+    <net code="66" name="Net-(U83-Pad2)">
+      <node ref="U87" pin="4"/>
+      <node ref="U83" pin="2"/>
+    </net>
+    <net code="67" name="Net-(U79-Pad2)">
+      <node ref="U79" pin="2"/>
+      <node ref="U83" pin="4"/>
+    </net>
+    <net code="68" name="Net-(U80-Pad2)">
+      <node ref="U80" pin="2"/>
+      <node ref="U84" pin="4"/>
+    </net>
+    <net code="69" name="Net-(U80-Pad4)">
+      <node ref="U87" pin="2"/>
+      <node ref="U80" pin="4"/>
+    </net>
+    <net code="70" name="Net-(U79-Pad4)">
+      <node ref="U79" pin="4"/>
+      <node ref="U86" pin="2"/>
+    </net>
+    <net code="71" name="Net-(U82-Pad2)">
+      <node ref="U86" pin="4"/>
+      <node ref="U82" pin="2"/>
+    </net>
+    <net code="72" name="Net-(U85-Pad2)">
+      <node ref="U85" pin="2"/>
+      <node ref="U89" pin="4"/>
+    </net>
+    <net code="73" name="Net-(U81-Pad2)">
+      <node ref="U85" pin="4"/>
+      <node ref="U81" pin="2"/>
+    </net>
+    <net code="74" name="Net-(U77-Pad2)">
+      <node ref="U78" pin="4"/>
+      <node ref="U77" pin="2"/>
+    </net>
+    <net code="75" name="Net-(U89-Pad2)">
+      <node ref="U89" pin="2"/>
+    </net>
+    <net code="76" name="Net-(U84-Pad2)">
+      <node ref="U84" pin="2"/>
+      <node ref="U88" pin="4"/>
+    </net>
+    <net code="77" name="Net-(U78-Pad2)">
+      <node ref="U78" pin="2"/>
+      <node ref="U82" pin="4"/>
+    </net>
+    <net code="78" name="Net-(U81-Pad4)">
+      <node ref="U81" pin="4"/>
+      <node ref="U88" pin="2"/>
+    </net>
+    <net code="79" name="Net-(U66-Pad4)">
+      <node ref="U75" pin="2"/>
+      <node ref="U66" pin="4"/>
+    </net>
+    <net code="80" name="Net-(U71-Pad2)">
+      <node ref="U76" pin="4"/>
+      <node ref="U71" pin="2"/>
+    </net>
+    <net code="81" name="Net-(U66-Pad2)">
+      <node ref="U66" pin="2"/>
+      <node ref="U71" pin="4"/>
+    </net>
+    <net code="82" name="Net-(U65-Pad2)">
+      <node ref="U70" pin="4"/>
+      <node ref="U65" pin="2"/>
+    </net>
+    <net code="83" name="Net-(U70-Pad2)">
+      <node ref="U75" pin="4"/>
+      <node ref="U70" pin="2"/>
+    </net>
+    <net code="84" name="Net-(U65-Pad4)">
+      <node ref="U74" pin="2"/>
+      <node ref="U65" pin="4"/>
+    </net>
+    <net code="85" name="Net-(U72-Pad2)">
+      <node ref="U77" pin="4"/>
+      <node ref="U72" pin="2"/>
+    </net>
+    <net code="86" name="Net-(U67-Pad4)">
+      <node ref="U76" pin="2"/>
+      <node ref="U67" pin="4"/>
+    </net>
+    <net code="87" name="Net-(U67-Pad2)">
+      <node ref="U72" pin="4"/>
+      <node ref="U67" pin="2"/>
+    </net>
+    <net code="88" name="Net-(U14-Pad2)">
+      <node ref="U15" pin="4"/>
+      <node ref="U14" pin="2"/>
+    </net>
+    <net code="89" name="Net-(U13-Pad2)">
+      <node ref="U14" pin="4"/>
+      <node ref="U13" pin="2"/>
+    </net>
+    <net code="90" name="Net-(U16-Pad2)">
+      <node ref="U17" pin="4"/>
+      <node ref="U16" pin="2"/>
+    </net>
+    <net code="91" name="Net-(U12-Pad2)">
+      <node ref="U13" pin="4"/>
+      <node ref="U12" pin="2"/>
+    </net>
+    <net code="92" name="Net-(U11-Pad2)">
+      <node ref="U12" pin="4"/>
+      <node ref="U11" pin="2"/>
+    </net>
+    <net code="93" name="Net-(U19-Pad2)">
+      <node ref="U20" pin="4"/>
+      <node ref="U19" pin="2"/>
+    </net>
+    <net code="94" name="Net-(U20-Pad2)">
+      <node ref="U21" pin="4"/>
+      <node ref="U20" pin="2"/>
+    </net>
+    <net code="95" name="Net-(U21-Pad2)">
+      <node ref="U21" pin="2"/>
+      <node ref="U22" pin="4"/>
+    </net>
+    <net code="96" name="Net-(U17-Pad2)">
+      <node ref="U17" pin="2"/>
+      <node ref="U18" pin="4"/>
+    </net>
+    <net code="97" name="Net-(U18-Pad2)">
+      <node ref="U18" pin="2"/>
+      <node ref="U19" pin="4"/>
+    </net>
+    <net code="98" name="Net-(U4-Pad2)">
+      <node ref="U4" pin="2"/>
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="99" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="100" name="Net-(U5-Pad2)">
+      <node ref="U5" pin="2"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="101" name="Net-(U1-Pad2)">
+      <node ref="U2" pin="4"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="102" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="103" name="Net-(U10-Pad4)">
+      <node ref="U9" pin="2"/>
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="104" name="Net-(U8-Pad2)">
+      <node ref="U9" pin="4"/>
+      <node ref="U8" pin="2"/>
+    </net>
+    <net code="105" name="Net-(U10-Pad2)">
+      <node ref="U11" pin="4"/>
+      <node ref="U10" pin="2"/>
+    </net>
+    <net code="106" name="Net-(U6-Pad2)">
+      <node ref="U6" pin="2"/>
+      <node ref="U7" pin="4"/>
+    </net>
+    <net code="107" name="Net-(U7-Pad2)">
+      <node ref="U8" pin="4"/>
+      <node ref="U7" pin="2"/>
+    </net>
+    <net code="108" name="Net-(U39-Pad2)">
+      <node ref="U39" pin="2"/>
+      <node ref="U40" pin="4"/>
+    </net>
+    <net code="109" name="Net-(U40-Pad2)">
+      <node ref="U40" pin="2"/>
+      <node ref="U41" pin="4"/>
+    </net>
+    <net code="110" name="Net-(U38-Pad2)">
+      <node ref="U38" pin="2"/>
+      <node ref="U39" pin="4"/>
+    </net>
+    <net code="111" name="Net-(U33-Pad2)">
+      <node ref="U34" pin="4"/>
+      <node ref="U33" pin="2"/>
+    </net>
+    <net code="112" name="Net-(U36-Pad2)">
+      <node ref="U37" pin="4"/>
+      <node ref="U36" pin="2"/>
+    </net>
+    <net code="113" name="Net-(U37-Pad2)">
+      <node ref="U37" pin="2"/>
+      <node ref="U38" pin="4"/>
+    </net>
+    <net code="114" name="Net-(U41-Pad2)">
+      <node ref="U41" pin="2"/>
+      <node ref="U42" pin="4"/>
+    </net>
+    <net code="115" name="Net-(U45-Pad2)">
+      <node ref="U45" pin="2"/>
+      <node ref="U46" pin="4"/>
+    </net>
+    <net code="116" name="Net-(U44-Pad2)">
+      <node ref="U44" pin="2"/>
+      <node ref="U45" pin="4"/>
+    </net>
+    <net code="117" name="Net-(U43-Pad2)">
+      <node ref="U44" pin="4"/>
+      <node ref="U43" pin="2"/>
+    </net>
+    <net code="118" name="Net-(U42-Pad2)">
+      <node ref="U42" pin="2"/>
+      <node ref="U43" pin="4"/>
+    </net>
+    <net code="119" name="Net-(U35-Pad2)">
+      <node ref="U35" pin="2"/>
+      <node ref="U36" pin="4"/>
+    </net>
+    <net code="120" name="Net-(U28-Pad2)">
+      <node ref="U29" pin="4"/>
+      <node ref="U28" pin="2"/>
+    </net>
+    <net code="121" name="Net-(U30-Pad2)">
+      <node ref="U30" pin="2"/>
+      <node ref="U31" pin="4"/>
+    </net>
+    <net code="122" name="Net-(U29-Pad2)">
+      <node ref="U29" pin="2"/>
+      <node ref="U30" pin="4"/>
+    </net>
+    <net code="123" name="Net-(U23-Pad2)">
+      <node ref="U23" pin="2"/>
+      <node ref="U27" pin="4"/>
+    </net>
+    <net code="124" name="Net-(U22-Pad2)">
+      <node ref="U22" pin="2"/>
+      <node ref="U23" pin="4"/>
+    </net>
+    <net code="125" name="Net-(U27-Pad2)">
+      <node ref="U28" pin="4"/>
+      <node ref="U27" pin="2"/>
+    </net>
+    <net code="126" name="Net-(U34-Pad2)">
+      <node ref="U35" pin="4"/>
+      <node ref="U34" pin="2"/>
+    </net>
+    <net code="127" name="Net-(U31-Pad2)">
+      <node ref="U32" pin="4"/>
+      <node ref="U31" pin="2"/>
+    </net>
+    <net code="128" name="Net-(U32-Pad2)">
+      <node ref="U33" pin="4"/>
+      <node ref="U32" pin="2"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,31 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,STANDARD,MANUFACTURER,MPN
+1,Unpolarized capacitor,C,C3 C4 C5 C6 C7,0.1uF,C_0805_HandSoldering,5,~,,,
+2,LED generic,LED,D1 D2 D3,LED,LED_0805,3,~,,,
+3,Atmel 10-pin JTAG connector,AVR-JTAG-10,J1,AVR-JTAG-10,Pin_Header_Straight_2x05_Pitch1.27mm,1, ~,,,
+4,DC Barrel Jack,Barrel_Jack,J4,Barrel_Jack,BARREL_JACK,1,~,,,
+5,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01,J2 J3,Conn_01x01,1mm Mount,2,~,,,
+6,"20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8",ATtiny85-20PU,MCU1,ATtiny85-20SU,ATtiny85_SMD,1,http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf,,,
+7,Resistor,R,R1 R2 R3 R4 R5 R6 R7,10k,R_0603,7,~,,,
+8,Resistor,R,R8 R9 R10,1k,R_0603,3,~,,,
+9,"Push button switch, generic, two pins",SW_Push,SW0 SW1 SW2 SW3 SW4 SW5,SW_Push,SW_SPST_B3S-1000,6,,,,
+10,"1A 20V Fixed LDO Linear Regulator, 5.0V, SOT-89/SOT-223/TO-220/TO-252/TO-263",AZ1117-5.0,U90,AZ1117-5.0,SOT-223-3_TabPin2,1,https://www.diodes.com/assets/Datasheets/AZ1117.pdf,,,
+11,,Bat,U24,Bat,CR2032 Housing,1,,,,
+12,Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16,DS3231M,U25,DS3231M,SOIC-16W_7.5x10.3mm_Pitch1.27mm,1,http://datasheets.maximintegrated.com/en/ds/DS3231.pdf,,,
+13,,MCP23017T-E_SO,U26,MCP23017T-E_SO,SOIC127P1030X265-28N,1,,IPC7351B,Microchip,
+14,,WS2812B,U1 U2 U3 U4 U5 U6 U7 U8 U9 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U38 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U61 U62 U63 U64 U65 U66 U67 U68 U69 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89,WS2812B,WS2812B-MINI,86,,,,
+15,USB Micro Type B connector,USB_B_Micro,USB1,USB_B_Micro,USB_Micro_B_Female_10103594-0001LF,1,~,,,0473460001
+
+
+
+
+
+Component Groups:,15
+Component Count:,120
+Fitted Components:,120
+Number of PCBs:,1
+Total components:,120
+Schematic Version:,1.0
+Schematic Date:,2020-11-19
+BoM Date:,11/20/2020 22:12:04
+Schematic Source:,C:\Users\Reed\Documents\WS2812B Mini Clock Single Brd\WS2812B Mini Clock.sch
+KiCad Version:,Eeschema (5.0.0)
